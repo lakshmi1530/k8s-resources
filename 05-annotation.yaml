@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotation
+  namespace: roboshop
+  labels:
+    project: roboshop
+    component: frontend
+    environment: dev
+  annotations:
+    description: "This is a sample annotation"
+    url: "https://www.roboshop.com"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+
+# annotations are key-value pair, like labels we can't use to filter
+# it is used to store extra info about resources and flexibe in limit not like labels.
+# special characters are allowed in annotations but not in labels.

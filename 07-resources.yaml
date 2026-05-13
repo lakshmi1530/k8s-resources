@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resource-demo
+  namespace: roboshop
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      # soft limit, i.e. minimum required resource to run the container
+      requests:
+        memory: "64Mi"
+        cpu: "100m"
+
+      # hard limit, i.e. maximum resource that can be used by the container
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+
+# resouce will limit the traffic to conatiner to ensure that the container does 
+# not consume more resources than it is allowed to.
