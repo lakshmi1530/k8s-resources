@@ -9,3 +9,6 @@ spec:
   - name: almalinux
     image: almalinux
     command: ["sleep", "1000"]
+  
+# We have pod "multicontainer" that contains two containers: one running the nginx image and another running the almalinux image.
+# The nginx container will run the nginx web server, while the almalinux container will run a simple command to sleep for 1000 seconds.

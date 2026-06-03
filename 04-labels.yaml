@@ -11,3 +11,6 @@ spec:
   containers:
   - name: nginx
     image: nginx
+
+# Labels are key-value pairs that we can attach to Kubernetes objects, such as pods, services, and deployments.
+# They are used to organize and categorize resources in a Kubernetes cluster.

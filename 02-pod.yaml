@@ -7,3 +7,7 @@ spec:
   containers:
   - name: nginx
     image: nginx
+
+# pod is the smallest deployable unit in Kubernetes. It represents a single instance of a running process in the cluster. 
+# A pod can contain one or more containers, which are the actual applications that run inside the pod. 
+# In this case, we have a pod named "nginx" that contains a single container running the nginx image.
