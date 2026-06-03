@@ -6,3 +6,8 @@ data:
   country: "India"
   course: "DevOps"
   duration: "12 weeks"
+
+#configmap is used to store non-confidential data in key-value pairs. 
+#It can be used to store configuration settings, environment variables, or any other data that your application needs to function properly.
+#ConfigMaps can be consumed by pods in several ways, such as environment variables, command-line arguments, or as files in a volume.
+

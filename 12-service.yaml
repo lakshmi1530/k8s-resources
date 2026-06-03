@@ -11,3 +11,6 @@ spec:
   - protocol: TCP
     port: 80 #service port
     targetPort: 80 #container port
+
+# A Service in Kubernetes is an abstraction that defines a logical set of Pods and a policy by which to access them.
+# Services enable communication between different components of an application, as well as between the application and external clients.

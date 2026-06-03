@@ -5,7 +5,7 @@ metadata:
   labels:
     name: roboshop
     environment: dev
-    purpose: poc
+    purpose: pocg
 
 #kind is the type of Kubernetes resource we want to create. In this case, we want to create a Namespace.
 # Namespace means a virtual cluster within the Kubernetes cluster. It allows us to organize and manage resources in a logical way. 

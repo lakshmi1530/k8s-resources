@@ -9,3 +9,8 @@ spec:
       envFrom:
         - configMapRef:
             name: my-configmap # References the name of your ConfigMap here 08-configmap.yaml
+
+# pod-configmap-demo is a pod that demonstrates how to use a ConfigMap to set environment variables for a container.
+# In this example, the pod has a single container running the nginx image. The envFrom field is used to specify that environment variables should be sourced from a ConfigMap named my-configmap.
+# When the pod is created, Kubernetes will look for the ConfigMap named my-configmap and create environment variables in the container based on the key-value pairs defined in that ConfigMap.
+
